@@ -1,15 +1,16 @@
+package injection;
+
 public class Main {
     public static void main(String[] args) {
-//        Car car =new Car();
-//        car.motor=new DieselMotor();
+//        injection.Car car =new injection.Car();
+//        car.motor=new injection.DieselMotor();
 //        car.getMotor().start();
 
           Motor motor = new OilMotor();
-//        DieselMotor dieselMotor =new DieselMotor();
+//        injection.DieselMotor dieselMotor =new injection.DieselMotor();
           Car car = new Car(motor);    // constructor
 //        car.setMotor(dieselMotor); // method
 //        car.motor=dieselMotor;     // property
-
         car.getMotor().start();
     }
 }
