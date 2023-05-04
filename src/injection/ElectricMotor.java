@@ -1,4 +1,6 @@
-public class ElectricMotor implements Motor{
+package injection;
+
+public class ElectricMotor implements Motor {
     @Override
     public void start() {
         System.out.println("ElectricMotor");
